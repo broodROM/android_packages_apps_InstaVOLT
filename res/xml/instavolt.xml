@@ -10,18 +10,21 @@
       <PreferenceCategory android:title="@string/instavolt_settings_title">
 
       <PreferenceScreen android:key="lower_volt_mv" android:summary="Decrease voltages of all CPU frequencies by 25mV" android:title="@string/cpu_volt_min_title">
-                                     <intent android:targetPackage="com.broodplank.instavolt" android:action="android.intent.action.MAIN" android:targetClass="com.broodplank.instavolt.MIN" /> 
                                </PreferenceScreen>   
                               
       <PreferenceScreen android:key="higher_volt_mv" android:summary="Increase voltages of all CPU frequencies by 25mV" android:title="@string/cpu_volt_max_title">
-                                     <intent android:targetPackage="com.broodplank.instavolt" android:action="android.intent.action.MAIN" android:targetClass="com.broodplank.instavolt.PLUS" /> 
                                </PreferenceScreen>   
 
        <PreferenceScreen android:key="check_volt_mv" android:summary="Get an overview of all CPU frequencies and their mVs" android:title="@string/cpu_check_volt">
-                                     <intent android:targetPackage="com.broodplank.instavolt" android:action="android.intent.action.MAIN" android:targetClass="com.broodplank.instavolt.CHECK" /> 
                                </PreferenceScreen>        
      </PreferenceCategory>
     
+      
+      <PreferenceCategory android:title="@string/str_bplite">
+            
+       <PreferenceScreen android:key="pref_credits" android:summary="@string/str_bpsum" android:title=""> 
+                               </PreferenceScreen>        
+                               </PreferenceCategory>
   
                
 </PreferenceScreen>

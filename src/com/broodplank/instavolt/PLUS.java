@@ -22,6 +22,8 @@ public class PLUS extends mainActivity {
 	        
 	        MAXMV();
 
+		       PLUS.this.finish();
+
 		}
 		
 		
