@@ -2,22 +2,23 @@
      
       <PreferenceCategory android:title="@string/str_other_settings">
        
-       <PreferenceScreen android:key="warning" android:summary="Make sure you stay in the safe voltage-range (750mV - 1450mV) at all times, values below or above the range may result in sudden power blackouts.\nReview the voltage changes after every increase or decrease before proceeding." android:title="READ BEFORE CONTINUING">
+       <PreferenceScreen android:key="warning" android:summary="If the CPU voltage-range of your device is unknown please limit the amount of milliVoltage steps to 2 (+/- 50mV).\nReview the voltage changes after every increase or decrease before proceeding." android:title="READ BEFORE CONTINUING">
                                </PreferenceScreen>        
         
               </PreferenceCategory>
 
       <PreferenceCategory android:title="@string/instavolt_settings_title">
 
-      <PreferenceScreen android:key="lower_volt_mv" android:summary="Decrease voltages of all CPU frequencies by 25mV" android:title="@string/cpu_volt_min_title">
+      <PreferenceScreen android:key="lower_volt_mv" android:summary="Decrease voltages of all CPU frequencies by 25 milliVolt" android:title="@string/cpu_volt_min_title">
                                </PreferenceScreen>   
                               
-      <PreferenceScreen android:key="higher_volt_mv" android:summary="Increase voltages of all CPU frequencies by 25mV" android:title="@string/cpu_volt_max_title">
+      <PreferenceScreen android:key="higher_volt_mv" android:summary="Increase voltages of all CPU frequencies by 25 milliVolt" android:title="@string/cpu_volt_max_title">
                                </PreferenceScreen>   
 
-       <PreferenceScreen android:key="check_volt_mv" android:summary="Get an overview of all CPU frequencies and their mVs" android:title="@string/cpu_check_volt">
+       <PreferenceScreen android:key="check_volt_mv" android:summary="Get an overview of all CPU frequencies and their respective milliVoltages" android:title="@string/cpu_check_volt">
                                </PreferenceScreen>        
      </PreferenceCategory>
+    
     
       
       <PreferenceCategory android:title="@string/str_bplite">

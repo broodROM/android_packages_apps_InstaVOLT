@@ -1,21 +1,17 @@
  <resources>
-
+     
     <string name="app_name">InstaVOLT</string>
-    
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">InstaVOLT</string>
-        <!-- CPU Settings strings -->
     <string name="instavolt_settings_title">CPU Voltage Regulator</string>
-   <string name="cpu_volt_min_title">Lower voltages by 25 mV</string>
-   <string name="cpu_volt_max_title">Raise voltages by 25 mV</string>
-   <string name="cpu_check_volt">Check current VDD Levels</string>
-   
-   
+    <string name="cpu_volt_min_title">Lower voltages by 25 mV</string>
+    <string name="cpu_volt_max_title">Raise voltages by 25 mV</string>
+    <string name="cpu_check_volt">Check current VDD Levels</string>
+    <string name="str_imp">Implementation (set on boot)</string>
+    <string name="cpu_make_initd">Generate init.d script</string>
     <string name="str_other_settings">IMPORTANT</string>
-
     <string name="str_bplite">Credits</string>
-    <string name="str_bpsum">InstaVOLT Version 1.0\nApp coded by broodplank\nCopyright ©2013 broodplank.net</string>
-    
+    <string name="str_bpsum">InstaVOLT Version 1.4\nApp coded by broodplank\nCopyright ©2013 broodplank.net</string>
+    <string name="str_error">It appears that your kernel does not support the VDD levels sysfs interface. Please install a kernel that supports this feature in order to continue\n\nFor developers:\nSupported sysfs interfaces are vdd_levels and UV_mV_tables\nWant to add support for voltage adjusting in your kernel? Find a VDD patch on Github/Google for your device, apply it to your kernel source and build it. Don\'t forget to enable it in your config!</string>
     
 </resources>
-

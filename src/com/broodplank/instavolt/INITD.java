@@ -15,11 +15,9 @@ import android.os.Environment;
 import com.stericson.RootTools.CommandCapture;
 import com.stericson.RootTools.RootTools;
 
-public class CHECK extends mainActivity {
+public class INITD extends mainActivity {
 
-	public static String VDD_LEVELS = "/sys/devices/system/cpu/cpu0/cpufreq/vdd_levels";
-	public static final String UV_MV_TABLE = "/sys/devices/system/cpu/cpu0/cpufreq/UV_mV_table";
-
+	public static final String VDD_LEVELS = "/sys/devices/system/cpu/cpu0/cpufreq/vdd_levels";
 
 	public static final File sdcard = Environment.getExternalStorageDirectory();
 
@@ -27,7 +25,6 @@ public class CHECK extends mainActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(null);
 
-		SETDEF();
 		CHECKNOW();
 
 	}
@@ -46,30 +43,6 @@ public class CHECK extends mainActivity {
 		} catch (Exception e) {
 		}
 		return line;
-	}
-	
-	public void SETDEF() {
-		File file = new File(VDD_LEVELS);
-		File file2 = new File(UV_MV_TABLE);
-		{
-			if (file.exists()) {
-				
-				// then nothing since its default
-				
-			} else if (file2.exists()) {
-				
-				// set vdd_levels to UV_Mv_Table
-			   VDD_LEVELS = UV_MV_TABLE;
-					   
-			   
-			} else {
-				
-
-			    // then nothing since there is no compatibility for other names yet.
-				// and thus this file will be never executed if that's the case.
-			}
-
-		}
 	}
 
 	public void CHECKNOW() {
@@ -118,7 +91,7 @@ public class CHECK extends mainActivity {
 				@Override
 				public void onClick(DialogInterface dialog, int which) {
 
-					CHECK.this.finish();
+					INITD.this.finish();
 
 				}
 			});
